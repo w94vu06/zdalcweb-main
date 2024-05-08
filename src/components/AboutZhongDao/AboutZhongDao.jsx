@@ -1,4 +1,4 @@
-import love_2 from "../../assets/zdalc"; // 確保路徑和文件名正確
+import love_2 from "../../assets/zdalc/love_2.jpg"; // 確保路徑和文件名正確
 
 function AboutZhongDao() {
   return (
