@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
@@ -7,6 +6,8 @@ export default {
       colors: {
         primary: "#B6A05D",
         secondary: "#D3B75D",
+        'custom-brown-light': '#B6A05D',// 漸變結束色
+        'custom-brown-dark': '#8F7E48', // 新增的漸變起始顏色
       },
       container: {
         center: true,
