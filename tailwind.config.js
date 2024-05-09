@@ -9,6 +9,9 @@ export default {
         'custom-brown-light': '#B6A05D',// 漸變結束色
         'custom-brown-dark': '#8F7E48', // 新增的漸變起始顏色
       },
+      width: {
+        '1/10': '10%',
+      },
       container: {
         center: true,
         padding: {

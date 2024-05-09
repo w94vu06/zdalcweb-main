@@ -1,13 +1,11 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
-import Products from "./components/Products/Products";
+import Category from "./components/Category/Category";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import TopProducts from "./components/TopProducts/TopProducts";
 import Introduction from "./components/Introduction/Introduction";
-import Subscribe from "./components/Subscribe/Subscribe";
-import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
 import Popup from "./components/Popup/Popup";
 import AboutZhongDao from "./components/AboutZhongDao/AboutZhongDao";
@@ -33,14 +31,11 @@ const App = () => {
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
       <Navbar handleOrderPopup={handleOrderPopup} />
       <Hero handleOrderPopup={handleOrderPopup} />
-      <Products />
       <TopProducts handleOrderPopup={handleOrderPopup} />
       <Introduction />
       <AboutZhongDao />
       <ChairWord />
-      <Subscribe />
-      <Products />
-      <Testimonials />
+      <Category />
       <Footer />
       <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
     </div>
