@@ -11,6 +11,7 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
 import Popup from "./components/Popup/Popup";
 import AboutZhongDao from "./components/AboutZhongDao/AboutZhongDao";
+import ChairWord from "./components/ChairWord/ChairWord";
 
 const App = () => {
   const [orderPopup, setOrderPopup] = React.useState(false);
@@ -36,6 +37,7 @@ const App = () => {
       <TopProducts handleOrderPopup={handleOrderPopup} />
       <Introduction />
       <AboutZhongDao />
+      <ChairWord />
       <Subscribe />
       <Products />
       <Testimonials />
