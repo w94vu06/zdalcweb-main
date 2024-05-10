@@ -10,6 +10,7 @@ import Footer from "../Footer/Footer";
 import Popup from "../Popup/Popup";
 import AboutZhongDao from "../AboutZhongDao/AboutZhongDao";
 import ChairWord from "../ChairWord/ChairWord";
+import BackGroundPage from "../BackGroundPage/BackGroundPage";
 
 const HomePage = () => {
   const [orderPopup, setOrderPopup] = React.useState(false);
@@ -30,7 +31,7 @@ const HomePage = () => {
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
       <Navbar handleOrderPopup={handleOrderPopup} />
-      <Hero handleOrderPopup={handleOrderPopup} />
+      <BackGroundPage handleOrderPopup={handleOrderPopup} />
       {/*<TopProducts handleOrderPopup={handleOrderPopup} />
       <Introduction />
       <AboutZhongDao />
