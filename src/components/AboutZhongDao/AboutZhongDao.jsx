@@ -1,28 +1,32 @@
 import love_2 from "../../assets/zdalc/love_2.jpg";
+import shape from "../../assets/zdalc/shape.png"
 import { GrFormNextLink } from "react-icons/gr";
 
 function AboutZhongDao() {
   return (
-    <div className="pt-20 pb-20 pl-10 pr-10">
-      <div className="flex flex-row bg-gradient-to-b bg-custom-brown-dark items-end justify-center rounded-3xl p-8">
-        <div className="flex flex-col">
-          <div className="w-full h-full pt-5 pl-5 pr-36">
-            <div className="w-full text-white pb-60">
-              <p className="text-4xl font-bold mb-12">關於中道</p>
-              <hr className="mb-12  border-white border-t-2 w-4/5"></hr>
-              <p className="text-xl font-bold">
-                <p>中道總會的理念 － 知行合一  大愛無我。</p><br />
-                道之大小乃小我與大愛之認知與運用程度而定。
-                認知與運用即是心、也是知的作用。<br />
-              </p>
-            </div>
-            <button data-aos="fade-up" className="flex w-full sm:w-1/2 items-end font-bold border-2 border-white text-white">
-              <span className="p-3">了解更多</span>
-              <GrFormNextLink className="text-4xl h-12 w-12 p-3 dark:bg-violet-400 ml-auto" />
+    <div className="container pt-40" >
+      <div data-aos="fade-up" className="flex flex-row bg-gradient-to-b items-center justify-center rounded-3xl ">
+        {/* 關於中道字 */}
+        <div className="w-1/2 h-full pt-10 pl-40 text-left relative text-white">
+          <img src={shape} alt="" className="absolute -bottom-24 right-5 w-[105%] h-auto z-0" />
+          <p data-aos="fade-up" className="text-4xl font-bold mb-10 z-10">關於中道</p>
+          <div data-aos="fade-up" className="ml-0 mx-auto mb-8 h-0.5 w-10 bg-white z-10"></div>
+          <p data-aos="fade-up" className="text-xl font-bold  z-10">
+            <p>中道總會的理念 － 知行合一  大愛無我。</p><br />
+            道之大小乃小我與大愛之認知與運用程度而定。<br />
+            認知與運用即是心、也是知的作用。<br />
+          </p>
+          <div data-aos="fade-up" className="flex flex-col items-center justify-center gap-4 rounded-full w-36">
+            <button className="flex items-center justify-center mt-10 text-white py-1 px-5 border-2 border-white font-bold w-full sm:w-auto rounded-full hover:scale-105 duration-300">
+              <span>查看更多</span>
+              <GrFormNextLink className="text-4xl h-9 w-9 pl-3 dark:bg-violet-400 ml-auto" />
             </button>
           </div>
         </div>
-        <img src={love_2} alt="道" className="max-w-full h-auto rounded-3xl mx-auto" />
+        {/* 關於中道圖片 */}
+        <div data-aos="fade-up" className="w-1/2 h-1/2 pt-5">
+          <img src={love_2} alt="" className="w-[125%] h-auto  rounded-3xl mx-auto shadow-2xl transform scale-100 " />
+        </div>
       </div>
     </div>
   );

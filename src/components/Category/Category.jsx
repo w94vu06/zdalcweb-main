@@ -47,13 +47,13 @@ const Category = [
 
 const Products = () => {
   return (
-    <div className="pt-20 pb-20 pl-10 pr-10">
+    <div className="container pt-20 pb-20 pl-10 pr-10">
       <div className="flex flex-row bg-gradient-to-b bg-custom-brown-dark items-end justify-center rounded-3xl p-8 text-white">
         <div className="mt-14 mb-12">
           <div className="container">
             {/* Header section */}
             <div className="text-center mb-10 max-w-[600px] mx-auto">
-              <h1 data-aos="fade-up" className="text-3xl font-bold">
+              <h1  className="text-3xl font-bold">
                 主題分類
               </h1><br />
               <hr className="mb-12  border-white border-t-2 w-1/12 mx-auto"></hr>
@@ -82,7 +82,7 @@ const Products = () => {
               </div>
               {/* view all button */}
               <div className="flex justify-center">
-                <button className="flex items-center justify-center mt-10  text-white py-1 px-5 pr-3 border-2 border-white font-bold w-full sm:w-auto">
+                <button  className="flex items-center justify-center mt-10 text-white py-1 px-5 pr-3 border-2 border-white font-bold w-full sm:w-auto rounded-full hover:scale-105 duration-300">
                   <span>查看更多</span>
                   <GrFormNextLink className="text-4xl h-9 w-9 pl-3 dark:bg-violet-400 ml-auto" />
                 </button>

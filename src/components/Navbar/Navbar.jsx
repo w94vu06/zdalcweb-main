@@ -7,27 +7,17 @@ import { FaCaretDown } from "react-icons/fa";
 const Menu = [
   {
     id: 1,
-    name: "首頁",
-    link: "/#",
-  },
-  {
-    id: 2,
-    name: "關於我們",
-    link: "/#services",
-  },
-  {
-    id: 3,
-    name: "最新活動",
-    link: "/#",
-  },
-  {
-    id: 4,
     name: "下載專區",
     link: "/#",
   },
   {
-    id: 5,
+    id: 2,
     name: "中道圖書館",
+    link: "/#",
+  },
+  {
+    id: 3,
+    name: "中道社群",
     link: "/#",
   },
 ];
@@ -35,17 +25,70 @@ const Menu = [
 const DropdownLinks = [
   {
     id: 1,
-    name: "中道社群",
+    name: "總會簡介",
     link: "/#",
   },
   {
     id: 2,
-    name: "中道社群",
+    name: "願景、使命、核心價值",
     link: "/#",
   },
   {
     id: 3,
-    name: "中道社群",
+    name: "理事長的話",
+    link: "/#",
+  },
+  {
+    id: 4,
+    name: "會務大事紀",
+    link: "/#",
+  },
+  {
+    id: 5,
+    name: "組織章程",
+    link: "/#",
+  },
+  {
+    id: 6,
+    name: "組織架構",
+    link: "/#",
+  },
+  {
+    id: 7,
+    name: "第二屆理監事名單",
+    link: "/#",
+  },
+  {
+    id: 8,
+    name: "姊妹會",
+    link: "/#",
+  },
+];
+
+const DropdownLinks_events = [
+  {
+    id: 1,
+    name: "活動預告",
+    link: "/#",
+  },
+  {
+    id: 2,
+    name: "研討暨論壇",
+    link: "/#",
+  },
+  {
+    id: 3,
+    name: "公益講座",
+    link: "/#",
+  },
+  {
+    id: 4,
+    name: "課程講座",
+    link: "/#",
+  },
+  {
+    id: 5,
+    name: "其他活動",
     link: "/#",
   },
 ];
@@ -60,26 +103,17 @@ const Navbar = ({ handleOrderPopup }) => {
               <img src={Logo} alt="Logo" />
             </a>
           </div>
-
-          <div className="flex justify-center text-xs">
+          <div className="flex justify-center items-center text-base">
+            <a
+              href="#"
+              className="inline-block px-4 hover:text-primary duration-200">
+              首頁
+            </a>
             <ul className="sm:flex hidden items-center">
-              {Menu.map((data) => (
-                <li key={data.id}>
-                  <a
-                    href={data.link}
-                    className="inline-block px-4 hover:text-primary duration-200"
-                  >
-                    {data.name}
-                  </a>
-                </li>
-              ))}
               {/* Simple Dropdown and Links */}
-              <li className="group relative cursor-pointer">
-                <a href="#" className="flex items-center gap-[2px] py-2">
-                  中道社群
-                  <span>
-                    <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
-                  </span>
+              <li className="group relative cursor-pointer hover:text-primary">
+                <a href="#" className="flex items-center gap-[2px] py-2 px-4">
+                  關於我們
                 </a>
                 <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white p-2 text-black shadow-md">
                   <ul>
@@ -96,6 +130,38 @@ const Navbar = ({ handleOrderPopup }) => {
                   </ul>
                 </div>
               </li>
+
+              {/* Simple Dropdown and Links */}
+              <li className="group relative cursor-pointer hover:text-primary">
+                <a href="#" className="flex items-center gap-[2px] py-2 px-4">
+                  最新活動
+                </a>
+                <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white p-2 text-black shadow-md">
+                  <ul>
+                    {DropdownLinks_events.map((data) => (
+                      <li key={data.id}>
+                        <a
+                          href={data.link}
+                          className="inline-block w-full rounded-md p-2 hover:bg-primary/20 "
+                        >
+                          {data.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </li>
+
+              {Menu.map((data) => (
+                <li key={data.id}>
+                  <a
+                    href={data.link}
+                    className="inline-block px-4 hover:text-primary duration-200"
+                  >
+                    {data.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 

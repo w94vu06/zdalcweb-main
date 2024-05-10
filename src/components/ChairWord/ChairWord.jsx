@@ -3,10 +3,11 @@ import { GrFormNextLink } from "react-icons/gr";
 
 function ChairWord() {
   return (
-    <div className="pt-20 pb-20 pl-10 pr-10">
-      <div className="flex flex-col bg-custom-brown-dark  rounded-3xl mx-auto">
+
+    <div className="container pt-60 pb-20">
+      <div data-aos="fade-up" className="flex flex-col bg-custom-brown-dark  rounded-3xl mx-auto">
         <div className="flex flex-row">
-          <img src={boss} alt="理事長" className="w-72 h-auto rounded-3xl object-cover" />
+          <img src={boss} alt="理事長" className="w-72 h-auto rounded-l-3xl object-cover" />
           <div className=" w-full h-full bg-gradient-to-b bg-custom-brown-dark items-center justify-center rounded-3xl p-8">
             <div className="w-full text-white">
               <p className="text-4xl font-bold mb-12 pt-4">理事長的話</p>
@@ -21,13 +22,16 @@ function ChairWord() {
                   我們歡迎更多人加入，共同探索中道文化的深遠影響。
                 </p>
               </div>
-              <button data-aos="fade-up" className="flex w-1/10 items-center font-bold border-2 border-white text-white">
-                <span className="p-3">了解更多</span>
-                <GrFormNextLink className="text-4xl h-12 w-12 p-3 dark:bg-violet-400 ml-auto" />
-              </button>
             </div>
           </div>
         </div>
+      </div>
+      {/* view all button */}
+      <div className="flex justify-end">
+        <button className="flex items-center justify-center mt-10 text-primaryDark py-1 px-5 pr-3 border-2 border-primaryDark font-bold w-full sm:w-auto rounded-full hover:scale-105 duration-300">
+          <span>查看更多</span>
+          <GrFormNextLink className="text-4xl h-9 w-9 pl-3 dark:bg-violet-400 ml-auto" />
+        </button>
       </div>
     </div>
 
