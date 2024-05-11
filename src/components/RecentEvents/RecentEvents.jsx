@@ -5,6 +5,7 @@ import Img3 from "../../assets/zdalc/class.jpg";
 import sdg01 from "../../assets/zdalc/SDG Icons 2019 _PRINT/E_SDG_PRINT-01.jpg";
 import zdIcons01 from "../../assets/zdalc/Zdalc Icons/zdalcIndex.png";
 import { GrFormNextLink } from "react-icons/gr";
+import { useNavigate } from 'react-router-dom';
 
 const EventsData = [
   {
@@ -79,6 +80,12 @@ const EventsData = [
 ];
 
 const RecentEvents = ({ handleOrderPopup }) => {
+  const navigate = useNavigate();
+
+  function NavToEvents() {
+    navigate('/events');  // 导航到 OrderPage 组件对应的路由
+  }
+
   return (
     <div>
       <div className="container">
@@ -95,7 +102,7 @@ const RecentEvents = ({ handleOrderPopup }) => {
             <div
               data-aos="zoom-in"
               className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-[300px] cursor-pointer"
-              onClick={handleOrderPopup}
+              onClick={NavToEvents}
             >
               {/* image section */}
               <div className="relative overflow-hidden h-[150px] rounded-t-2xl">
@@ -138,15 +145,15 @@ const RecentEvents = ({ handleOrderPopup }) => {
                 <div className="flex flex-col justify-center items-center h-full">
                   <span className="text-white text-2xl font-bold pb-5">中道指標</span>
                   <div className="flex justify-between px-4">
-                      {data.zdIcons.map((image) => (
-                        <img
-                          key={image.id}
-                          src={image.src}
-                          alt=""
-                          className="w-1/4 rounded"
-                        />
-                      ))}
-                    </div>
+                    {data.zdIcons.map((image) => (
+                      <img
+                        key={image.id}
+                        src={image.src}
+                        alt=""
+                        className="w-1/4 rounded"
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

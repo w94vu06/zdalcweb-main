@@ -9,6 +9,14 @@ import SDG1 from "../../assets/zdalc/SDG Icons 2019 _PRINT/E_SDG_PRINT-01.jpg"
 import SDG2 from "../../assets/zdalc/SDG Icons 2019 _PRINT/E_SDG_PRINT-02.jpg"
 import SDG3 from "../../assets/zdalc/SDG Icons 2019 _PRINT/E_SDG_PRINT-03.jpg"
 import ZhongDao from "../../assets/zdalc/ZdalcIcon.png"
+import BackGroundPage from "../../components/BackGroundPage/BackGroundPage";
+import Img1 from "../../assets/zdalc/class.jpg";
+import Img2 from "../../assets/zdalc/class.jpg";
+import Img3 from "../../assets/zdalc/class.jpg";
+import sdg01 from "../../assets/zdalc/SDG Icons 2019 _PRINT/E_SDG_PRINT-01.jpg";
+import zdIcons01 from "../../assets/zdalc/Zdalc Icons/zdalcIndex.png";
+import "node_modules/video-react/dist/video-react.css";
+import { Player } from 'video-react';
 
 
 const SDGsData = [
@@ -85,9 +93,14 @@ const Events = () => {
         ))}
         <p className="text-6xl my-auto px-3">/</p>
         {ZhongDaoData.map((data) => (
-          <img src={data.img} alt={data.title} className="w-36 h-36 rounded-3xl object-cover bg-black p-3"/>
+          <img src={data.img} alt={data.title} className="w-36 h-36 rounded-3xl object-cover bg-black p-3" />
         ))}
       </div>
+      <Player
+        playsInline
+        poster="/assets/poster.png"
+        src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+      />
       <Footer />
     </div>
   );
