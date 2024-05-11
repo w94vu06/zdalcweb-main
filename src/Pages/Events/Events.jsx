@@ -1,10 +1,10 @@
 /* eslint-disable react/jsx-key */
 import React from "react";
-import Navbar from "../Navbar/Navbar";
-import Hero from "../Hero/Hero";
+import Navbar from "../../components/Navbar/Navbar";
+import Hero from "../../components/Hero/Hero";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Footer from "../Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 import SDG1 from "../../assets/zdalc/SDG Icons 2019 _PRINT/E_SDG_PRINT-01.jpg"
 import SDG2 from "../../assets/zdalc/SDG Icons 2019 _PRINT/E_SDG_PRINT-02.jpg"
 import SDG3 from "../../assets/zdalc/SDG Icons 2019 _PRINT/E_SDG_PRINT-03.jpg"

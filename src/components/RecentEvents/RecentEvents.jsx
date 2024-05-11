@@ -6,7 +6,7 @@ import sdg01 from "../../assets/zdalc/SDG Icons 2019 _PRINT/E_SDG_PRINT-01.jpg";
 import zdIcons01 from "../../assets/zdalc/Zdalc Icons/zdalcIndex.png";
 import { GrFormNextLink } from "react-icons/gr";
 
-const ProductsData = [
+const EventsData = [
   {
     id: 1,
     img: Img1,
@@ -78,7 +78,7 @@ const ProductsData = [
   },
 ];
 
-const TopProducts = ({ handleOrderPopup }) => {
+const RecentEvents = ({ handleOrderPopup }) => {
   return (
     <div>
       <div className="container">
@@ -91,7 +91,7 @@ const TopProducts = ({ handleOrderPopup }) => {
         </div>
         {/* Body section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:gap-5 place-items-center ">
-          {ProductsData.map((data) => (
+          {EventsData.map((data) => (
             <div
               data-aos="zoom-in"
               className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-[300px] cursor-pointer"
@@ -163,4 +163,4 @@ const TopProducts = ({ handleOrderPopup }) => {
   );
 };
 
-export default TopProducts;
+export default RecentEvents;

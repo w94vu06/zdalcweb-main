@@ -1,7 +1,7 @@
 import "aos/dist/aos.css";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from "./components/HomePage/HomePage";
-import Events from "./components/Events/Events";
+import HomePage from "./Pages/HomePage/HomePage";
+import Events from "./Pages/Events/Events";
 
 const App = () => {
   return (
