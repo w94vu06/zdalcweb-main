@@ -15,7 +15,6 @@ import Img2 from "../../assets/zdalc/class.jpg";
 import Img3 from "../../assets/zdalc/class.jpg";
 import sdg01 from "../../assets/zdalc/SDG Icons 2019 _PRINT/E_SDG_PRINT-01.jpg";
 import zdIcons01 from "../../assets/zdalc/Zdalc Icons/zdalcIndex.png";
-import "node_modules/video-react/dist/video-react.css";
 import { Player } from 'video-react';
 
 
@@ -96,11 +95,9 @@ const Events = () => {
           <img src={data.img} alt={data.title} className="w-36 h-36 rounded-3xl object-cover bg-black p-3" />
         ))}
       </div>
-      <Player
-        playsInline
-        poster="/assets/poster.png"
-        src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-      />
+      <Player>
+        <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+      </Player>
       <Footer />
     </div>
   );
