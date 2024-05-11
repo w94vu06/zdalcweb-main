@@ -95,7 +95,7 @@ const DropdownLinks_events = [
 
 const Navbar = ({ handleOrderPopup }) => {
   return (
-    <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white z-40 fixed top-0 w-full">
+    <div className="shadow-md bg-white dark:bg-gray-900 text-black z-40 fixed top-0 w-full">
       <div className="bg-white/40 py-2">
         <div className="container flex items-center justify-between">
           <div className="object-contain w-60 inset-y-0">
@@ -172,10 +172,10 @@ const Navbar = ({ handleOrderPopup }) => {
                 type="text"
                 placeholder="搜尋"
                 className="w-[200px] sm:w-[200px] transition-all duration-300 rounded-full border
-                 border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary dark:border-gray-500
-                  dark:bg-gray-800  "
+                 border-gray-300 px-5 py-1 focus:outline-none focus:border-1 focus:border-primary dark:border-gray-500
+                  dark:bg-white  "
               />
-              <IoMdSearch className="text-black group-hover: absolute top-1/2 -translate-y-1/2 right-3" />
+              <IoMdSearch className="text-black bg-white group-hover: absolute top-1/2 -translate-y-1/2 right-3" />
             </div>
           </div>
         </div>

@@ -17,7 +17,7 @@ const Introduction = () => {
 
           {/* text details section */}
           <div className="flex flex-col justify-center gap-8 sm:pt-0">
-            <h1 data-aos="fade-up" className="text-3xl sm:text-4xl font-bold">
+            <h1 data-aos="fade-up" className="text-3xl text-black sm:text-4xl font-bold">
               總會簡介
             </h1>
             <div data-aos="fade-up" className="ml-0 my-4 h-0.5 w-10 bg-black"></div>
@@ -31,7 +31,7 @@ const Introduction = () => {
             <div data-aos="fade-up" className="flex flex-col items-center justify-center gap-4 rounded-full w-36">
               <button className="flex items-center justify-center mt-10 text-primaryDark py-1 px-5 pr-3 border-2 border-primaryDark font-bold w-full sm:w-auto rounded-full hover:scale-105 duration-300">
                 <span>查看更多</span>
-                <GrFormNextLink className="text-4xl h-9 w-9 pl-3 dark:bg-violet-400 ml-auto" />
+                <GrFormNextLink className="text-4xl h-9 w-9 pl-3  ml-auto" />
               </button>
             </div>
           </div>

@@ -5,12 +5,14 @@ import Events from "./Pages/Events/Events";
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route element={<HomePage />} path={'/'}></Route>
-        <Route element={<Events />} path='/events'></Route>
-      </Routes>
-    </Router>
+    <div>
+      <Router>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/events' element={<Events />} />
+        </Routes>
+      </Router>
+    </div>
   );
 };
 

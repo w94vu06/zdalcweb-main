@@ -90,10 +90,11 @@ const RecentEvents = ({ handleOrderPopup }) => {
     <div>
       <div className="container">
         {/* Header section */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-10 text-black">
           <h1 data-aos="fade-up" className="text-3xl font-bold">
             近期活動
           </h1>
+          
           <div data-aos="fade-up" className="mx-auto my-4 h-0.5 w-10 bg-black"></div>
         </div>
         {/* Body section */}
@@ -119,7 +120,7 @@ const RecentEvents = ({ handleOrderPopup }) => {
                   <span className="ml-4 bg-primary text-white px-2 py-0.5 rounded group-hover:bg-white group-hover:text-primary ">{data.hint}</span>
                 </div>
                 <div className="flex items-center pb-2">
-                  <h1 className="text-xl font-bold">{data.title}</h1>
+                  <h1 className="text-xl text-black font-bold ">{data.title}</h1>
                 </div>
 
                 <div className="flex justify-between px-4">
@@ -136,7 +137,7 @@ const RecentEvents = ({ handleOrderPopup }) => {
                 <div className="flex justify-start">
                   <button className="flex items-center justify-center mt-2 text-primaryDark py-1 font-bold w-full sm:w-auto">
                     <span>查看更多</span>
-                    <GrFormNextLink className="text-4xl h-9 w-9 pl-3 dark:bg-violet-400 ml-auto" />
+                    <GrFormNextLink className="text-4xl h-9 w-9 pl-3 ml-auto" />
                   </button>
                 </div>
               </div>

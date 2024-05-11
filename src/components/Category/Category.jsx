@@ -17,31 +17,31 @@ const Category = [
     id: 2,
     img: seminar,
     title: "研討暨論壇",
-    aosDelay: "200",
+    aosDelay: "50",
   },
   {
     id: 3,
     img: publicwelfare,
     title: "公益講座",
-    aosDelay: "400",
+    aosDelay: "100",
   },
   {
     id: 4,
     img: reading,
     title: "讀書分享會",
-    aosDelay: "600",
+    aosDelay: "150",
   },
   {
     id: 5,
     img: otherEvent,
     title: "其他活動",
-    aosDelay: "800",
+    aosDelay: "200",
   },
   {
     id: 6,
     img: SDGsInZdalc,
     title: "SDGs在中道",
-    aosDelay: "800",
+    aosDelay: "250",
   },
 ];
 
@@ -84,7 +84,7 @@ const Products = () => {
               <div className="flex justify-center">
                 <button  className="flex items-center justify-center mt-10 text-white py-1 px-5 pr-3 border-2 border-white font-bold w-full sm:w-auto rounded-full hover:scale-105 duration-300">
                   <span>查看更多</span>
-                  <GrFormNextLink className="text-4xl h-9 w-9 pl-3 dark:bg-violet-400 ml-auto" />
+                  <GrFormNextLink className="text-4xl h-9 w-9 pl-3  ml-auto" />
                 </button>
               </div>
             </div>

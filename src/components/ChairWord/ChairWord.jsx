@@ -30,7 +30,7 @@ function ChairWord() {
       <div className="flex justify-end">
         <button className="flex items-center justify-center mt-10 text-primaryDark py-1 px-5 pr-3 border-2 border-primaryDark font-bold w-full sm:w-auto rounded-full hover:scale-105 duration-300">
           <span>查看更多</span>
-          <GrFormNextLink className="text-4xl h-9 w-9 pl-3 dark:bg-violet-400 ml-auto" />
+          <GrFormNextLink className="text-4xl h-9 w-9 pl-3  ml-auto" />
         </button>
       </div>
     </div>
