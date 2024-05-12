@@ -130,9 +130,11 @@ const Content = () => {
           </div>
           {/* 頁首影片 */}
           <div className='my-12 w-full max-md:mt-10 max-md:max-w-full'>
-            <Player>
-              <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
-            </Player>
+            <div className="relative">
+              <Player>
+                <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+              </Player>
+            </div>
           </div>
           {/* 摘要&重點條列 */}
           <div className="text-xl text-black leading-loose">
