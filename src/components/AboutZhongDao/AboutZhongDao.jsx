@@ -12,7 +12,7 @@ function AboutZhongDao() {
           <p data-aos="fade-up" className="text-4xl font-bold mb-10 z-10">關於中道</p>
           <div data-aos="fade-up" className="ml-0 mx-auto mb-8 h-0.5 w-10 bg-white z-10"></div>
           <p data-aos="fade-up" className="text-xl font-bold  z-10">
-            <p>中道總會的理念 － 知行合一  大愛無我。</p><br />
+            中道總會的理念 － 知行合一  大愛無我。<br />
             道之大小乃小我與大愛之認知與運用程度而定。<br />
             認知與運用即是心、也是知的作用。<br />
           </p>

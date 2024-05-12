@@ -7,14 +7,11 @@ import "aos/dist/aos.css";
 import RecentEvents from "../../components/RecentEvents/RecentEvents";
 import Introduction from "../../components/Introduction/Introduction";
 import Footer from "../../components/Footer/Footer";
-import Popup from "../../components/Popup/Popup";
 import AboutZhongDao from "../../components/AboutZhongDao/AboutZhongDao";
 import ChairWord from "../../components/ChairWord/ChairWord";
-import BackGroundPage from "../../components/BackGroundPage/BackGroundPage";
 
 const HomePage = () => {
   const [orderPopup, setOrderPopup] = React.useState(false);
-
   const handleOrderPopup = () => {
     setOrderPopup(!orderPopup);
   };
@@ -28,11 +25,12 @@ const HomePage = () => {
     AOS.refresh();
   }, []);
 
+
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
       <Navbar handleOrderPopup={handleOrderPopup} />
       <Hero handleOrderPopup={handleOrderPopup} />
-      <RecentEvents/>
+      <RecentEvents />
       <Introduction />
       <AboutZhongDao />
       <ChairWord />
