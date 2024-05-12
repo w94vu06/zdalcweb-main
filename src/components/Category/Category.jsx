@@ -60,7 +60,7 @@ const Products = () => {
             </div>
             {/* Body section */}
             <div>
-              <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 place-items-center gap-5">
+              <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 place-items-center gap-5 ">
                 {/* card section */}
                 {Category.map((data) => (
                   <div
@@ -72,7 +72,7 @@ const Products = () => {
                     <img
                       src={data.img}
                       alt=""
-                      className="h-96 w-96 object-cover rounded-3xl over-hidden"
+                      className="h-96 w-96 object-cover rounded-3xl over-hidden "
                     />
                     <div>
                       <h3 className="font-semibold text-2xl text-center">{data.title}</h3>
@@ -82,7 +82,7 @@ const Products = () => {
               </div>
               {/* view all button */}
               <div className="flex justify-center">
-                <button  className="flex items-center justify-center mt-10 text-white py-1 px-5 pr-3 border-2 border-white font-bold w-full sm:w-auto rounded-full hover:scale-105 duration-300">
+                <button className="flex items-center justify-center mt-10 text-white py-1 px-5 pr-3 border-2 border-white font-bold w-full sm:w-auto rounded-full hover:scale-105 duration-300">
                   <span>查看更多</span>
                   <GrFormNextLink className="text-4xl h-9 w-9 pl-3  ml-auto" />
                 </button>

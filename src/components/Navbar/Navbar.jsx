@@ -99,20 +99,20 @@ const Navbar = ({ handleOrderPopup }) => {
       <div className="bg-white/40 py-2">
         <div className="container flex items-center justify-between">
           <div className="object-contain w-60 inset-y-0">
-            <a href="#" className="flex items-center">
+            <a href="/#" className="flex items-center">
               <img src={Logo} alt="Logo" />
             </a>
           </div>
           <div className="flex justify-center items-center text-base">
             <a
-              href="#"
+              href="/#"
               className="inline-block px-4 hover:text-primary duration-200">
               首頁
             </a>
             <ul className="sm:flex hidden items-center">
               {/* Simple Dropdown and Links */}
               <li className="group relative cursor-pointer hover:text-primary">
-                <a href="#" className="flex items-center gap-[2px] py-2 px-4">
+                <a href="/#" className="flex items-center gap-[2px] py-2 px-4">
                   關於我們
                 </a>
                 <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white p-2 text-black shadow-md">

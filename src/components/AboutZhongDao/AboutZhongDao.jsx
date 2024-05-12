@@ -8,7 +8,7 @@ function AboutZhongDao() {
       <div data-aos="fade-up" className="flex flex-row bg-gradient-to-b items-center justify-center rounded-3xl ">
         {/* 關於中道字 */}
         <div className="w-1/2 h-full pt-10 pl-40 text-left relative text-white">
-          <img src={shape} alt="" className="absolute -bottom-24 right-5 w-[105%] h-auto z-0" />
+          <img src={shape} alt="" className="absolute -bottom-16 -right-5 w-[105%] h-auto z-0" />
           <p data-aos="fade-up" className="text-4xl font-bold mb-10 z-10">關於中道</p>
           <div data-aos="fade-up" className="ml-0 mx-auto mb-8 h-0.5 w-10 bg-white z-10"></div>
           <p data-aos="fade-up" className="text-xl font-bold  z-10">

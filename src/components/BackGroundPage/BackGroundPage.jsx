@@ -1,11 +1,14 @@
 import HeroImg from "../../assets/hero/hero-bg.jpg";
 
-const BackGroundPage = () => {
-
+const BackGroundPage = ({position}) => {
     return (
-        <div className="flex flex-col relative overflow-hidden min-h-screen bg-gray-100 items-start
-     dark:bg-gray-950 dark:text-white duration-200 container pb-8">
-            <img src={HeroImg} alt="" className="w-full h-[500px] sm:h-[400px] object-cover z-20 mt-28" />
+        <div className="">
+            <div className="relative">
+                <img src={HeroImg} alt="" className="w-full h-[500px] object-cover z-0" />
+                <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl text-white font-bold ">
+                    近期活動
+                </p>
+            </div>
         </div>
     );
 };
