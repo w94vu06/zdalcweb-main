@@ -3,6 +3,9 @@ import Img1 from "../../assets/zdalc/class.jpg";
 import Img2 from "../../assets/zdalc/class.jpg";
 import Img3 from "../../assets/zdalc/class.jpg";
 import sdg01 from "../../assets/zdalc/SDG Icons 2019 _PRINT/E_SDG_PRINT-01.jpg";
+import sdg12 from "../../assets/zdalc/SDG Icons 2019 _PRINT/E_SDG_PRINT-12.jpg";
+import sdg13 from "../../assets/zdalc/SDG Icons 2019 _PRINT/E_SDG_PRINT-13.jpg";
+import sdg17 from "../../assets/zdalc/SDG Icons 2019 _PRINT/E_SDG_PRINT-17.jpg";
 import zdIcons01 from "../../assets/zdalc/Zdalc Icons/zdalcIndex.png";
 import { GrFormNextLink } from "react-icons/gr";
 import { useNavigate } from 'react-router-dom';
@@ -15,9 +18,9 @@ const EventsData = [
     title: "中道談判力:各種情境-林榮堅",
     hint: "講座",
     images: [
-      { id: 1, src: sdg01 },
-      { id: 2, src: sdg01 },
-      { id: 3, src: sdg01 },
+      { id: 1, src: sdg12 },
+      { id: 2, src: sdg13 },
+      { id: 3, src: sdg17 },
     ],
     zdIcons: [
       { id: 1, src: zdIcons01 },
