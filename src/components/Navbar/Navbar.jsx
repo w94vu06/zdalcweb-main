@@ -20,6 +20,11 @@ const Menu = [
     name: "中道社群",
     link: "/#",
   },
+  {
+    id: 4,
+    name: "上傳檔案",
+    link: "/Upload",
+  },
 ];
 
 const DropdownLinks = [
