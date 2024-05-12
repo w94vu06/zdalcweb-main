@@ -1,23 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { Breadcrumbs } from "@material-tailwind/react";
 import { Player } from 'video-react';
-import sdg01 from "../../assets/zdalc/SDG Icons 2019 _PRINT/E_SDG_PRINT-01.jpg";
+import sdg12 from "../../assets/zdalc/SDG Icons 2019 _PRINT/E_SDG_PRINT-12.jpg";
+import sdg13 from "../../assets/zdalc/SDG Icons 2019 _PRINT/E_SDG_PRINT-13.jpg";
+import sdg17 from "../../assets/zdalc/SDG Icons 2019 _PRINT/E_SDG_PRINT-17.jpg";
 import zdIcons01 from "../../assets/zdalc/Zdalc Icons/zdalcIndex.png";
 
 const SDGsValue = [
   {
     id: 1,
-    SDGsIcons: sdg01,
+    SDGsIcons: sdg12,
     description: "SDG 12：負責任的消費和生產 - 提倡實踐碳減排和資源回收，推動實現更永續的消費和生產模式。",
   },
   {
     id: 2,
-    SDGsIcons: sdg01,
+    SDGsIcons: sdg13,
     description: "SDG 13：氣候行動 - 強調採取緊急行動對抗氣候變化及其影響。",
   },
   {
     id: 3,
-    SDGsIcons: sdg01,
+    SDGsIcons: sdg17,
     description: "SDG 17：夥伴關係實現目標 - 透過跨宗教和跨領域的合作，共同努力實現全球永續發展目標。",
   },
 ];
@@ -47,9 +49,9 @@ const ContentData = [
     title: "中道-向地球佈施-李鴻源",
     hint: "講座",
     images: [
-      { id: 1, src: sdg01 },
-      { id: 2, src: sdg01 },
-      { id: 3, src: sdg01 },
+      { id: 1, src: sdg12 },
+      { id: 2, src: sdg13 },
+      { id: 3, src: sdg17 },
     ],
   }
 ];
