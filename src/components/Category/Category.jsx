@@ -47,20 +47,20 @@ const Category = [
 
 const Products = () => {
   return (
-    <div className="container pt-20 pb-20 pl-10 pr-10">
-      <div className="flex flex-row bg-gradient-to-b bg-custom-brown-dark items-end justify-center rounded-3xl p-8 text-white">
-        <div className="mt-14 mb-12">
+    <div className="container pt-10 pb-20 px-10">
+      <div className="flex flex-row bg-gradient-to-b bg-custom-brown-dark items-end justify-center rounded-3xl p-2 text-white">
+        <div className="mt-12 mb-12">
           <div className="container">
             {/* Header section */}
             <div className="text-center mb-10 max-w-[600px] mx-auto">
               <h1  className="text-3xl font-bold">
                 主題分類
-              </h1><br />
-              <hr className="mb-12  border-white border-t-2 w-1/12 mx-auto"></hr>
+              </h1><br/>
+              <hr className="border-white border-t-2 w-1/12 mx-auto"></hr>
             </div>
             {/* Body section */}
             <div>
-              <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 place-items-center gap-5 ">
+              <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 place-items-center gap-6 ">
                 {/* card section */}
                 {Category.map((data) => (
                   <div
@@ -72,7 +72,7 @@ const Products = () => {
                     <img
                       src={data.img}
                       alt=""
-                      className="h-96 w-96 object-cover rounded-3xl over-hidden "
+                      className="h-80 w-96 object-cover rounded-3xl over-hidden hover:scale-105 duration-300"
                     />
                     <div>
                       <h3 className="font-semibold text-2xl text-center">{data.title}</h3>
