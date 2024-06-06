@@ -63,6 +63,10 @@ const zdImages = {
   17: zdIcons01,
 };
 
+
+
+
+
 function formatDate(dateString) {
   const date = new Date(dateString);
   if (!isNaN(date)) {
@@ -75,7 +79,20 @@ function formatDate(dateString) {
 
 const Content = ({ id }) => {
   const [isHovered, setIsHovered] = useState(false);
-  const images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg'];
+  const images = [
+  'http://localhost:9000/zdimage/從中道談廉明政道與清境與論-陳樹/01.jpg',
+  'http://localhost:9000/zdimage/從中道談廉明政道與清境與論-陳樹/02.jpg',
+  'http://localhost:9000/zdimage/從中道談廉明政道與清境與論-陳樹/03.jpg',
+  'http://localhost:9000/zdimage/從中道談廉明政道與清境與論-陳樹/04.jpg',
+  'http://localhost:9000/zdimage/從中道談廉明政道與清境與論-陳樹/05.jpg',
+  'http://localhost:9000/zdimage/從中道談廉明政道與清境與論-陳樹/06.jpg',
+  'http://localhost:9000/zdimage/從中道談廉明政道與清境與論-陳樹/07.jpg',
+  'http://localhost:9000/zdimage/從中道談廉明政道與清境與論-陳樹/08.jpg',
+  'http://localhost:9000/zdimage/從中道談廉明政道與清境與論-陳樹/09.jpg',
+  'http://localhost:9000/zdimage/從中道談廉明政道與清境與論-陳樹/10.jpg',
+  'http://localhost:9000/zdimage/從中道談廉明政道與清境與論-陳樹/11.jpg',
+  'http://localhost:9000/zdimage/從中道談廉明政道與清境與論-陳樹/12.jpg',
+];
 
   const [post, setPost] = useState([]);
 
@@ -209,13 +226,13 @@ const Content = ({ id }) => {
             <div className="my-auto">相關圖片</div>
           </div>
 
-          <div className="flex flex-wrap pt-5 justify-between gap-2 max-md:flex-col max-md:gap-0">
+          <div className="flex flex-wrap pt-5 pb-16 justify-between gap-2 max-md:flex-col max-md:gap-0">
             {images.map((image, index) => (
-              <div key={index} className="w-1/5 p-1">
+              <div key={index} className="w-1/5 p-1 overflow-hidden">
                 <img
                   loading="lazy"
-                  srcSet={image}
-                  className="grow shrink-0 max-w-full aspect-square w-full"
+                  src={image}
+                  className="grow shrink-0 max-w-full aspect-square w-full object-cover"
                 />
               </div>
             ))}
